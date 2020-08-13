@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm"></div>
+        <div class="col-sm-12 text-center">
+            <h1 class="text-center display-4 font-weight-bolder text-dark" [ngStyle]="{'margin':'20px'}">{{ nonsens }}</h1>
+        </div>
+        <div class="col-sm"></div>
+    </div>
+    <div class="row">
+        <div class="col-sm">
+            <span class="text-left text-dark" [ngStyle]="{ 'font-size': '22px', 'margin': '10px'}">Meningar: {{antalMeningar}}</span>
+        </div>
+        <div class="col-sm">
+                <button (click)="setNonsens();" class="btn-success" [ngStyle]="{ 'font-size': '32px', 'margin': '10px'}">Blanda</button>
+        </div>
+        <div class="col-sm">
+            <span class="text-right text-dark" [ngStyle]="{ 'font-size': '22px', 'margin': '10px'}">Ord : {{antalOrd}}</span>
+        </div>
+        <div class="col-sm">
+            <a type="button"
+            class="text-danger"
+            [ngStyle]="{'margin-left': '5px', 'margin-top': '5px','border-radius':'10px', 'border-style' : 'solid', 'padding': '2px'}"
+            (click)="nollaData()"
+            >X</a>
+        </div>
+    </div>
+</div>

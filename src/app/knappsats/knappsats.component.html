@@ -1,0 +1,48 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12 text-center">
+            <a type="button" *ngFor="let value of [1,2,3]"
+            class="display-4 knappsats" 
+            [ngStyle]="{'margin': '10px', 'border-radius':'10px', 'border-style' : 'solid', 'padding': '5px'}"
+            (click)="keyDown(value);"
+            >{{value}}</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 text-center">
+            <a type="button" *ngFor="let value of [4,5,6]"
+            class="display-4 knappsats" 
+            [ngStyle]="{'margin': '10px', 'border-radius':'10px', 'border-style' : 'solid', 'padding': '5px'}"
+            (click)="keyDown(value);"
+            >{{value}}</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 text-center">
+            <a type="button" *ngFor="let value of [7,8,9]"
+            class="display-4 knappsats" 
+            [ngStyle]="{'margin': '10px', 'border-radius':'10px', 'border-style' : 'solid', 'padding': '5px'}"
+            (click)="keyDown(value);"
+            >{{value}}</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 text-center">
+            <a type="button"
+            class="display-4 knappsats" 
+            [ngStyle]="{'margin': '10px', 'border-radius':'10px', 'border-style' : 'solid', 'padding': '5px'}"
+            (click)="removeLast();"
+            >&#8617;</a>
+            <a type="button"
+            class="display-4 knappsats" 
+            [ngStyle]="{'margin': '10px', 'border-radius':'10px', 'border-style' : 'solid', 'padding': '5px'}"
+            (click)="keyDown('0');"
+            >0</a>
+            <a type="button"
+            class="display-4 knappsats" 
+            [ngStyle]="{'margin': '10px', 'border-radius':'10px', 'border-style' : 'solid', 'padding': '5px'}"
+            (click)="done();"
+            >&#61;</a>
+        </div>
+    </div>
+</div>

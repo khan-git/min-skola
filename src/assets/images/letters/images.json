@@ -1,0 +1,33 @@
+{ 
+    "images": {
+        "a":["apa.jpeg"],
+        "b":["banan.jpeg", "bamse.jpeg"],
+        "c":["citron.jpeg","cykel.jpeg"],
+        "d":["delfin.jpeg"],
+        "e":["elefant.jpeg"],
+        "f":["fot.jpeg"],
+        "g":["groda.jpeg", "giraff.jpeg"],
+        "h":["häst.jpeg"],
+        "i":["igelkott.jpeg","iglo.jpeg"],
+        "j":["jordgubbe.jpeg","jultomte.jpeg"],
+        "k":["kanin.jpeg","katt.jpeg","klocka.jpeg"],
+        "l":["lama.jpeg","lampa.jpeg"],
+        "m":["morot.jpeg"],
+        "n":["nyckel.jpeg"],
+        "o":["orm.jpeg","ost.jpeg"],
+        "p":["paraply.jpg","prinsessa.jpeg"],
+        "q":["quidditch.jpeg"],
+        "r":["ros.jpeg","råtta.jpeg"],
+        "s":["snögubbe.jpeg","sol.jpeg"],
+        "t":["troll.jpeg","tåg.jpeg"],
+        "u":["uggla.jpeg"],
+        "v":["val.jpeg"],
+        "w":["walkietalkie.jpeg"],
+        "x":["xylofon.jpeg"],
+        "y":["yxa.jpeg"],
+        "z":["zebra2.jpeg","zebra.jpeg"],
+        "å":["åsna-2.jpeg","åsna.jpeg"],
+        "ä":["ägg.jpeg","älva.jpeg","äpple.jpeg"],
+        "ö":["ödla.jpeg"]
+    }
+}

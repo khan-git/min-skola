@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="row">
+        <div class="col-sm text-center resultat">
+            Resultat: {{correct}} av {{tries}}
+            <a type="button"
+            class="text-danger"
+            [ngStyle]="{'margin-left': '5px', 'margin-top': '5px','border-radius':'10px', 'border-style' : 'solid', 'padding': '2px'}"
+            (click)="nollaData()"
+            >X</a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-12 test-center">
+            <span class="display-3 talet">{{tal1}}&#215;{{tal2}}&#61;{{svar}}</span>
+            <img src="assets/images/check.svg" alt="success" class="success" [ngStyle]="{'visibility': showSuccess ? 'visible': 'hidden'}"
+            (click)="doNext()">
+            <img src="assets/images/failed.svg" alt="failed" class="failed" [ngStyle]="{'visibility': showFailed ? 'visible': 'hidden'}">
+            <br>
+            <app-knappsats 
+            (keyEnteredEvent)="onAddValueToResult($event)"
+            (removeLastEvent)="onRemoveLastValue($event)"
+            (doneEvent)="onCheckResult($event)"
+            ></app-knappsats>
+            <ng5-slider [(value)]="maxtal" [options]="slideoptions" (userChangeEnd)="rangeChanged($event)"></ng5-slider>
+        </div>
+    </div>
+</div>

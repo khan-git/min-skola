@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm"></div>
+    <div class="col-sm-12 text-center">
+      <carousel [showIndicators]="false" [interval]="0" (activeSlideChange)="changedSlide($event)" [(activeSlide)]="foo">
+          <slide *ngFor="let letter of lettersArray; let i = index">
+            <p><progressbar type="warning" [value]="((foo+1)/lettersArray.length)*100" [striped]="true" ><i>{{foo+1}} av {{lettersArray.length}}</i></progressbar></p>
+            <h1 class="text-center font-weight-bolder text-dark" [ngStyle]="{'font-size' : '150px'}">{{aLetter}}</h1>
+            <img *ngIf="images[aLetter|lowercase].length > 0 && showImage=='1'"
+            class="rounded mx-auto" 
+            src="./assets/images/letters/{{this.images[aLetter|lowercase][0]}}"
+            [width]="100">
+          </slide>
+      </carousel>
+      <button type="button" class="btn btn-success"
+              [(ngModel)]="showImage" btnCheckbox [ngStyle]="{ 'font-size': '32px'}"
+              btnCheckboxTrue="1" btnCheckboxFalse="0">Bilder
+      </button>
+      <button type="button" class="btn btn-success"
+      [ngStyle]="{ 'font-size': '32px'}" 
+      (click)="slumpaLista(getLetters())">
+        Blanda
+      </button>
+      <div class="btn-group" [ngStyle]="{'margin': '10px'}">
+        <label class="btn btn-success" [(ngModel)]="versaler" [ngStyle]="{ 'font-size': '22px'}"
+              btnRadio="1" tabindex="0" role="button">VERSALER</label>
+        <label class="btn btn-success" [(ngModel)]="versaler" [ngStyle]="{ 'font-size': '22px'}"
+              btnRadio="0" tabindex="0" role="button">gemener</label>
+      </div>
+    </div>
+    <div class="col-sm"></div>
+  </div>
+</div>

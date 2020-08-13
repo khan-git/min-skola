@@ -1,0 +1,45 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: grinched;
+    src: url(assets/fonts/GrinchedRegular.otf) format("opentype");     
+}
+@font-face {
+    font-family: grinchedregular;
+    src: url(assets/fonts/Grinched.ttf) format("truetype");     
+}
+@font-face {
+    font-family: krtoonnumbers;
+    src: url('assets/fonts/KR_Toon_Numbers.ttf')  format("truetype")
+}
+@font-face {
+    font-family: cheri;
+    src: url(assets/fonts/Cheri.ttf)  format("truetype")
+}
+@font-face {
+    font-family: sfcartonisthand;
+    src: url(assets/fonts/SFCartoonistHand.ttf)  format("truetype")
+}
+
+@font-face {
+    font-family: opendyslexicregular;
+    src: url(assets/fonts/OpenDyslexic/OpenDyslexic-Regular.otf) format("opentype");     
+}
+
+@font-face {
+    font-family: opendyslexicbold;
+    src: url(assets/fonts/OpenDyslexic/OpenDyslexic-Bold.otf) format("opentype");     
+}
+
+* {
+    font-family: opendyslexicregular;
+}
+
+.talet {
+    background-color: pink;
+    border-style: dotted;
+    border-radius: 10px;
+  }
+
+.dyslexia {
+    font-family: opendyslexicregular;
+}

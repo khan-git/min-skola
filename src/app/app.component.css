@@ -1,0 +1,15 @@
+.mainmenu {
+    margin: 1px;
+    padding: 1px;
+    font-size: 32px;
+    color: black;
+}
+
+.returnmenu {
+    position: fixed;
+    top: 0px;
+    left: 10px;
+    z-index: 2;
+    font-size: 30px;
+    color: black;
+}

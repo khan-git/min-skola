@@ -1,0 +1,18 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12 text-center">
+      <carousel [interval]="0">
+        <slide ngbSlide *ngFor="let word of words; let i  = index">
+          <p><progressbar type="warning" [value]="((i+1)/words.length)*100" [striped]="true" style="height: 25px;" ><i [ngStyle]="{'font-size':'25px'}">{{i+1}} av {{words.length}}</i></progressbar></p>
+          <h1 class="display-1 font-weight-bolder dyslexia" style="display: block, width: 100%;">{{getWord(word)}}</h1>
+        </slide>
+      </carousel>
+      <div class="btn-group" [ngStyle]="{'margin': '10px'}">
+        <label class="btn btn-success" [(ngModel)]="versaler" [ngStyle]="{ 'font-size': '32px'}"
+              btnRadio="versaler" tabindex="0" role="button">VERSALER</label>
+        <label class="btn btn-success" [(ngModel)]="versaler" [ngStyle]="{ 'font-size': '32px'}"
+              btnRadio="gemener" tabindex="0" role="button">gemener</label>
+      </div>
+    </div>
+  </div>
+</div>

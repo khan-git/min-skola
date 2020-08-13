@@ -1,0 +1,24 @@
+<div class="container" style="padding-top: 10px;">
+  <div class="row">
+    <div class="col-md-12 text-center mainmenu">
+      <a [hidden]="this.route=='Home'"
+      class="returnmenu"
+      type="button" 
+      routerLink="/"
+      routerLinkActive="active">&#8630;</a>
+      <span *ngFor="let do of buttons">
+        <a [hidden]="!(this.route=='Home')"
+        type="button" 
+        routerLink="/{{do.name | lowercase | removespace}}"
+        routerLinkActive="active"
+        class="mainmenu">{{do.name}}</a>
+        <br [hidden]="!(this.route=='Home')">
+      </span>
+    </div> 
+  </div>  
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <router-outlet></router-outlet>
+    </div>  
+  </div>  
+</div>
